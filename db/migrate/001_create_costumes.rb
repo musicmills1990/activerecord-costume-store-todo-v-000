@@ -1,5 +1,5 @@
 # Create a class and inherit from ActiveRecord::Migration
-class CreateCostumes < ActiveRecord::Migration
+class CreateCostumes < ActiveRecord::Migration[5.1]
 
   def change
     create_table :costumes do |t|
@@ -10,7 +10,6 @@ class CreateCostumes < ActiveRecord::Migration
       t.timestamps
     end
   end
-  
 end
 # By convention, the class name should match the part of the
 # file name after the number, so in this case:
